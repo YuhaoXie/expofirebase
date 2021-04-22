@@ -117,7 +117,48 @@ function DetailsScreen({ navigation }) {
                 autoCapitalize: 'none',
               },
             },
+            {
+              type: 'input',
 
+              name: 'location',
+
+              label: 'Location',
+
+              rules: {
+                required: {
+                  value: true,
+
+                  message: 'Location is required',
+                },
+              },
+
+              textInputProps: {
+                keyboardType: 'default',
+
+                autoCapitalize: 'none',
+              },
+            },
+            {
+              type: 'input',
+
+              name: 'date',
+
+              label: 'Date',
+
+              rules: {
+                required: {
+                  value: true,
+
+                  message: 'Date is required',
+                },
+              },
+
+              textInputProps: {
+                keyboardType: 'default',
+
+                autoCapitalize: 'none',
+              },
+            },
             {
               type: 'input',
 
@@ -203,7 +244,7 @@ const Stack = createStackNavigator();
 function HomeScreen() {
   return (
     <Stack.Navigator initialRouteName="Home">
-      <Stack.Screen name="Home" component={HomeScreen2} />
+      <Stack.Screen name="Popup Restaurant" component={HomeScreen2} />
       <Stack.Screen name="Details" component={DetailsScreen} />
     </Stack.Navigator>
   );

@@ -41,11 +41,11 @@ export default function LoginScreen({ navigation }) {
     return (
         <View style={styles.container}>
             <KeyboardAwareScrollView
-                style={{ flex: 1, width: '100%' }}
+                style={{ flex: 1, width: '50%' }}
                 keyboardShouldPersistTaps="always">
                 <Image
                     style={styles.logo}
-                    source={require('../../../assets/icon.png')}
+                    source={require('./loginicon.png')}
                 />
                 <TextInput
                     style={styles.input}
